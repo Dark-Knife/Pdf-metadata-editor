@@ -70,4 +70,4 @@ Un champ laissé vide est **supprimé** du PDF.
 
 ## Licence
 
-À définir (par exemple MIT).
+MIT
