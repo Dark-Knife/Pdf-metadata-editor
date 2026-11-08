@@ -19,7 +19,7 @@ Petit outil en Python avec interface graphique pour **lire et modifier les méta
 Prérequis : Python 3.8 ou plus récent (Tkinter est inclus avec l'installateur Python officiel sous Windows).
 
 ```bash
-git clone https://github.com/<votre-compte>/pdf-metadata-editor.git
+git clone https://github.com/Dark-Knife/pdf-metadata-editor.git
 cd pdf-metadata-editor
 pip install pikepdf
 ```
