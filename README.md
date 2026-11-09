@@ -1,8 +1,6 @@
 # PDF Metadata Editor
 
-A small Python tool with a graphical interface to **read and edit the metadata of a PDF file**: title, author, subject, keywords, creation and modification dates, custom fields, file name, and more.
-
-> Note: the user interface is currently in French.
+A small Python tool with a graphical interface to **read and edit the metadata of a PDF file**: title, author, subject, keywords, creation and modification dates, custom fields, file name, and more. Inspired by the "Document Properties" window of PDF Explorer (RTT Software).
 
 ## Features
 
@@ -15,6 +13,7 @@ A small Python tool with a graphical interface to **read and edit the metadata o
 - Optional **XMP synchronization** so that other PDF readers display the same values
 - **Save as…** to work on a copy without touching the original
 - Console mode to print the metadata (`--show`)
+- **Bilingual interface**: English (default) or French, switchable in the app or with `--lang`
 
 ## Installation
 
@@ -45,6 +44,17 @@ Print the metadata in the console, without the interface:
 ```bash
 python pdf_metadata_editor.py document.pdf --show
 ```
+
+### Language
+
+The interface is in English by default. You can switch language at any time with the drop-down menu at the top right of the window, or choose it at startup:
+
+```bash
+python pdf_metadata_editor.py --lang fr
+python pdf_metadata_editor.py document.pdf --show --lang fr
+```
+
+To change the default language permanently, edit `DEFAULT_LANG` at the top of `pdf_metadata_editor.py` (`"en"` or `"fr"`). Adding another language only requires a new entry in the `STRINGS` dictionary.
 
 ### Accepted date formats
 
